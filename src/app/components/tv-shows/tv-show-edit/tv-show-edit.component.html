@@ -1,0 +1,9 @@
+<form (ngSubmit)="updateTvShow()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="tvShow.name" required>
+
+    <label for="favorite">Favorite:</label>
+    <input type="checkbox" id="favorite" name="favorite" [(ngModel)]="tvShow.favorite">
+
+    <button type="submit">Update</button>
+</form>

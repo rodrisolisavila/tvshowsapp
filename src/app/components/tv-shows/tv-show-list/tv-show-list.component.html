@@ -1,0 +1,6 @@
+<div *ngFor="let show of tvShows">
+    <h3>{{ show.name }}</h3>
+    <p>Favorite: {{ show.favorite ? 'Yes' : 'No' }}</p>
+    <button (click)="editShow(show.id)">Edit</button>
+    <button (click)="deleteShow(show.id)">Delete</button>
+</div>

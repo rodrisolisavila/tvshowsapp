@@ -1,0 +1,10 @@
+<div *ngIf="tvShow">
+    <h2>Delete TV Show</h2>
+    <p>Are you sure you want to delete "{{ tvShow.name }}"?</p>
+    <button (click)="deleteTvShow()">Yes, delete</button>
+    <button (click)="cancelDelete()">Cancel</button>
+  </div>
+  <div *ngIf="errorMessage">
+    <p class="error">{{ errorMessage }}</p>
+  </div>
+  
